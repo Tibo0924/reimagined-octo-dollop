@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WhiteStuff</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="./jquery.countdown.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="ex1" class="modal"style="display:none">
+        <div class="modalContent">
+          <div id="closeButton" class="close"><p class="cross">+</p></div>
+          <p class="offerDetails">
+            <span id="discount"style="font-weight: 600"></span> off today! You'll pay
+            <span id="minSpent"></span><br></br>Enter code
+            <span id="promoCode"></span> at checkout
+          </p>
+          <p class="offerEnd">Offer ends in: <span id="timer"></span></p>
+          <form class="form">
+            <label for="signup">Sign up to our newsletter get more offers</label>
+            <input type="email" class="emailInput" name="email"style="font-size: 18px" />
+          </form>
+        </div>
+        <h3 style="display:none"class="userMessage">Thank you for your subscription</h3>
+      </div>
+    </div>
+    <!-- cookie library -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="./script.js" async defer></script>
+  </body>
+</html>

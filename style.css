@@ -1,0 +1,130 @@
+.wrapper {
+  display: flex;
+  height: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+.wrapper label {
+  font-size: 18px;
+  padding-bottom: 24px;
+}
+/* =========== Modal ========== */
+.modal {
+  height: 450px;
+  max-width: 450px;
+  border-radius: 50%;
+  background-color: #5ec1ef;
+  color: #fff;
+  font-size: 23px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 4%;
+  flex-direction: column;
+}
+.modal a.close-modal {
+  top: 8.5px;
+  right: 99.5px;
+}
+.modal span {
+  font-weight: 600;
+}
+
+.offerDetails {
+  line-height: 17px;
+}
+.offerDetails {
+  font-size: 24px;
+}
+
+.offerEnd {
+  font-size: 33px;
+  margin-top: 18px;
+  text-align: center;
+}
+.close {
+  position: absolute;
+  top: 0px;
+  right: 83px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color:rgb(0, 0, 0);
+  text-align:center;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  transform: rotate(45deg);
+  border-radius: 50%;
+  font-size: 50px;
+  box-shadow: 0 0 2px 0px #00000087;
+}
+.close:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.cross {
+  font-weight: 400;
+  margin: 0;
+  position: absolute;
+  top: 43%;
+  left: 24%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* =========== form ========== */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.emailInput {
+  border: none;
+  padding: 10px;
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* media queries */
+/* mobile */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .wrapper {
+      height: 90vh;
+    }
+    .offerDetails {font-size: 30px}
+    .close {top: 7px;right: 3px;}
+    .modal {
+      border-radius:0;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+    .offer { font-size: 30px;}
+    .modal a.close-modal {
+      top: 1.5px;
+      right: 1.5px;
+    }
+    .offerDetails {line-height: 37px;}
+    .emailInput {width: 100%}
+    .wrapper label {font-size: 16px}
+    .offerEnd {font-size: 40px;}
+}
+/* tablets */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .modal {height: 62%;}
+}
+
